@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="NumberCheck" parallel="tests" thread-count="2"> <!-- parallel="methods" thread-count="2" -->
+	<listeners>
+		<listener
+			class-name="com.cynnent.listeners.CustomITestListener" />
+	</listeners>
+	<test name="FunctionalTest_chrome">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.cynnent.tests.loginTest" />
+		</classes>
+	</test>
+	<test name="FunctionalTest_firefox">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.cynnent.tests.loginTest" />
+		</classes>
+	</test>
+</suite>

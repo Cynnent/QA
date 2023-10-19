@@ -1,0 +1,8 @@
+target/
+Reports/
+logs/
+test-output/
+Driver/
+.classpath
+.project
+.settings/
